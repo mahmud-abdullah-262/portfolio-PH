@@ -26,14 +26,15 @@
   font-weight: bold;
   font-size: 20px;
   padding: 18px 35px;
-  width: 150px;
   border-radius: 5px;
 }
 /* ============================= */
 
 header{
-  background-color: #FFF8F3;
   padding-top: 65px;
+  background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right bottom;
 }
 nav{
   width: 71%;
@@ -60,4 +61,35 @@ nav .menu li a{
   text-decoration: none;
   color: #474747;
   font-size: 20px;
+}
+
+#banner{
+  margin: 46px 38px 0px 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner .banner-content{
+  max-width: 585px;
+}
+#banner h2{
+  color: #474747;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#banner h1{
+  font-size: 85px;
+  font-weight: bold;
+  color: #181818;
+  margin-bottom: 20px;
+}
+#banner p{
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px
+}
+#banner .banner-image img{
+  width: 584px;
+  vertical-align: middle;
 }
