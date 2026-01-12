@@ -5,10 +5,11 @@
 }
 
 /* shaered style */
-
+body{
+  width: 100%;
+}
 .open-sans-font{
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
 }
 
 .color-orenge{
@@ -28,6 +29,13 @@
   padding: 18px 35px;
   border-radius: 5px;
 }
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
 .text-align-center{
   text-align: center;
 }
@@ -287,4 +295,88 @@ footer{
   line-height: 28px;
   color: #757575;
   margin-bottom: 24px;
+}
+.hide{
+  display: none !important;
+}
+@media screen and (max-width: 576px){
+   #skills .skills-conteiner .skill-box,
+  #resume .resume-conteiner,
+  .footer-conteiner,
+  #about .about-conteiner .about-info,
+  nav,
+  #banner{
+    flex-direction: column;
+  }
+
+
+  header{
+    width: 100%;
+  padding-top: 65px;
+  background: url("../images/header_bg.png"), #FFF8F3;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+  #banner {
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+  #banner h1{
+    font-size: 44px;
+  }
+  .btn-group{
+    flex-direction: column;
+  }
+
+  #banner .banner-image img{
+    width: 100%;
+  }
+  nav{
+    text-align: center;
+    justify-content: center;
+  }
+  nav h2{
+    font-size: 30px;
+  }
+  #about .about-conteiner{
+    padding: 20px;
+  }
+ #about .about-conteiner .about-info{
+  gap: 30px;
+ }
+
+  #skills{
+    padding-top: 60px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section-heading h1{
+    font-size: 30px;
+  }
+
+  #skills .skills-conteiner{
+    width: 90%;
+  }
+
+ 
+
+  #skills .skills-conteiner .skill-box .skill-card{
+    padding: 10px;
+  }
+
+  #resume .resume-conteiner .info-card{
+    margin: 0;
+  }
+
+  .footer-conteiner .messege input{
+    width: 100%;
+  }
+
+  .footer-conteiner .messege textarea{
+    width: 100%;
+  }
 }
